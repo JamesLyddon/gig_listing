@@ -1,21 +1,21 @@
-import { useState } from 'react'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart as emptyHeart } from '@fortawesome/free-regular-svg-icons'
 import { faHeart as fullHeart } from '@fortawesome/free-solid-svg-icons'
 import "./Gig.css"
 
-const Gig = ({band}) => {
-    const {name, description, location, time, img} = band
+const Gig = ({gig, onFavouriteToggle}) => {
+    const {name, description, location, time, img, isFavourite} = gig
 
     const cardStyle = {
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(${img})`
     };
 
-    const [fav, setFav] = useState(false)
-    let btnIcon = fav ? <FontAwesomeIcon icon={fullHeart} /> : <FontAwesomeIcon icon={emptyHeart} />
+    let btnIcon = isFavourite ? <FontAwesomeIcon icon={fullHeart} /> : <FontAwesomeIcon icon={emptyHeart} />
 
     const handleFavClick = (event) => {
-        setFav(!fav)
+        onFavouriteToggle()        
+        
         const button = event.currentTarget;
         button.classList.add('animate');
         setTimeout(() => {
