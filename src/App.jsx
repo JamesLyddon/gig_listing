@@ -2,6 +2,8 @@ import { bands } from './data/bandsData'
 import Gig from "./components/gig/Gig"
 import "./App.css";
 
+
+
 function App() {
   return (
     <div className="gigsContainer">
