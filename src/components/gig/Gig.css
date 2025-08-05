@@ -16,7 +16,8 @@
     filter 0.3s ease-in-out;
   filter: drop-shadow(0px 0px 0px var(--kraken-purple));
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
+  margin: 1rem;
 }
 
 .card:hover {

@@ -1,17 +1,18 @@
 import "./Gig.css"
 
-const Gig = (props) => {
+const Gig = ({band}) => {
+    const {name, description, location, time, img} = band
     // set image as background for card
     const cardStyle = {
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url(${props.band.img})`
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url(${img})`
     };
 
     return (
         <div className="card" style={cardStyle}>
-            <h3 className="bandName">{props.band.name}</h3>
-            <p className="bandDescription" >{props.band.description}</p>
-            <p className="gigLocation">{props.band.location}</p>
-            <p className="gigTime">{props.band.time}</p>
+            <h3 className="bandName">{name}</h3>
+            <p className="bandDescription" >{description}</p>
+            <p className="gigLocation">{location}</p>
+            <p className="gigTime">{time}</p>
         </div>
     )
 }
