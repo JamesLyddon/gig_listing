@@ -4,24 +4,24 @@
   height: 500px;
   width: 400px;
   border-radius: 35px;
-  color: var(--kraken-white);
+  color: var(--seasalt);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 1rem;
   font-size: 1.2em;
-  text-shadow: 0px 4px 8px var(--kraken-purple);
+  text-shadow: 0px 4px 8px var(--dim-gray);
   transition:
     transform 0.3s ease-in-out,
-    filter 0.3s ease-in-out;
-  filter: drop-shadow(0px 0px 0px var(--kraken-purple));
+    filter 0.2s ease-in-out;
+  filter: drop-shadow(0px 0px 0px var(--seasalt));
   position: relative;
   overflow: hidden;
   margin: 1rem;
 }
 
 .card:hover {
-  filter: drop-shadow(5px 5px 0px var(--kraken-pink));
+  filter: drop-shadow(5px 5px 0px #FF7F11);
   transform: rotate3d(-1, 1, 0, 0.05turn);
 }
 
@@ -46,14 +46,20 @@
   transform: translateX(-50%);
 }
 
-
-
-
 .bandName {
     font-size: 2.5em;
     margin: 0;
-}
-
-.bandDescription {
+    color: #FF7F11;
+    text-shadow: 2px 2px 0px #c1620e;
+  }
+  
+  .bandDescription {
     padding: 0 2rem;
+    font-size: 0.8em;
+  }
+  
+  .gigTime {
+    font-size: 1.5rem;
+    color: #FF7F11;
+    text-shadow: 2px 2px 0px #c1620e;
 }

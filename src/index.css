@@ -1,8 +1,9 @@
 :root {
-  --kraken-purple: rgba(15, 0, 46, 1);
-  --kraken-pink: rgba(239, 79, 247, 1);
-  --kraken-pink-d: rgba(170, 56, 176, 1);
-  --kraken-white: rgba(240, 255, 255, 1);
+--seasalt: #fafafaff;
+--alice-blue: #e3f2fdff;
+--indian-red: #db5461ff;
+--dim-gray: #686963ff;
+--cambridge-blue: #8aa29eff;
   font-family: system-ui, Helvetica, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -16,7 +17,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: var(--kraken-purple);
+  background-color: var(--seasalt);
 }
 
 h1 {
