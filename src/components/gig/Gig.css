@@ -1,27 +1,25 @@
 .card {
   background-size: cover;
   background-position: center;
-  height: 500px;
-  width: 400px;
+  width: 100%;
+  aspect-ratio: 4 / 5; 
   border-radius: 35px;
-  color: var(--seasalt);
+  color: var(--linen);
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding: 1rem;
+  justify-content: space-between;
+  padding: 1.5rem;
   font-size: 1.2em;
-  text-shadow: 0px 4px 8px var(--dim-gray);
   transition:
     transform 0.3s ease-in-out,
-    filter 0.2s ease-in-out;
-  filter: drop-shadow(0px 0px 0px var(--seasalt));
+    filter 0.27s ease-in-out;
+  filter: drop-shadow(0px 0px 0px var(--linen));
   position: relative;
   overflow: hidden;
-  margin: 1rem;
 }
 
 .card:hover {
-  filter: drop-shadow(5px 5px 0px #FF7F11);
+  filter: drop-shadow(5px 5px 0px var(--persian-red));
   transform: rotate3d(-1, 1, 0, 0.05turn);
 }
 
@@ -43,23 +41,24 @@
 }
 
 .card:hover::before {
-  transform: translateX(-50%);
+  transform: translateX(100%);
 }
 
 .bandName {
-    font-size: 2.5em;
-    margin: 0;
-    color: #FF7F11;
-    text-shadow: 2px 2px 0px #c1620e;
-  }
-  
-  .bandDescription {
-    padding: 0 2rem;
-    font-size: 0.8em;
-  }
-  
-  .gigTime {
-    font-size: 1.5rem;
-    color: #FF7F11;
-    text-shadow: 2px 2px 0px #c1620e;
+  font-size: clamp(1rem, 2rem, 3rem);
+  margin: 0;
+  /* background: linear-gradient(45deg, #00BFFF, #00BFFF, #FFD700, #FF7F11);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: none; */
+}
+
+.gigDetails {
+  text-align: center;
+}
+
+.gigTime {
+  padding: 0;
+  margin: 0;
 }

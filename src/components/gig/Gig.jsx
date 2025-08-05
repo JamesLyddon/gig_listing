@@ -9,12 +9,12 @@ const Gig = ({band}) => {
 
     return (
         <div className="card" style={cardStyle}>
-
                 <h3 className="bandName">{name}</h3>
                 <p className="bandDescription" >{description}</p>
-                <p className="gigTime">{time}</p>
-                <p className="gigLocation">{location}</p>
-
+                <div className="gigDetails">
+                    <p className="gigLocation">{location}</p>
+                    <p className="gigTime">{time}</p>
+                </div>
         </div>
     )
 }

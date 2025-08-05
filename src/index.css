@@ -1,27 +1,24 @@
 :root {
---seasalt: #fafafaff;
---alice-blue: #e3f2fdff;
---indian-red: #db5461ff;
---dim-gray: #686963ff;
---cambridge-blue: #8aa29eff;
+--raisin-black: #231f20ff;
+--persian-red: #bb4430ff;
+--verdigris: #7ebdc2ff;
+--vanilla: #f3dfa2ff;
+--linen: #efe6ddff;
   font-family: system-ui, Helvetica, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color: var(--polynesian-blue);
+}
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
+
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  /* min-width: 320px; */
   min-height: 100vh;
-  background-color: var(--seasalt);
+  background-color: var(--linen);
 }
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
