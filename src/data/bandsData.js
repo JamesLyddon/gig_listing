@@ -35,4 +35,13 @@ export const gigs = [
     location: "Salle Capranie, Ondres, France",
     isFavourite: false
   }, 
+  {
+    id: '56390e69-e524-4a03-a42f-96b75dae6880',
+    name: "Lorde",
+    img: "https://i1.sndcdn.com/avatars-000109789705-fgtczc-t1080x1080.jpg",
+    description: "Ella Marija Lani Yelich-O'Connor, known professionally as Lorde, is a New Zealand singer-songwriter. She is known for her unconventional style of pop music and introspective songwriting. Lorde first gained recognition as a teenager during a talent show performance.",
+    time: "5pm, 20th of December, 2025",
+    location: "South Park, Colorado, USA",
+    isFavourite: false
+  }, 
 ]
